@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install copy 
+      mac_pkg: pkg_type=app
+               url=https://copy.com/install/mac/Copy.dmg
+               archive_type=dmg archive_path=Copy.app
+      sudo: yes
+
