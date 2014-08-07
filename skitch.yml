@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install skitch
+      mac_pkg: pkg_type=app
+               url=https://evernotecdn-a.akamaihd.net/skitch/mac/release/Skitch-2.7.2.zip
+               archive_type=zip archive_path=Skitch.app
+      sudo: yes
+

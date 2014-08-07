@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install divvy
+      mac_pkg: pkg_type=app
+               url=http://mizage.com/downloads/Divvy.zip
+               archive_type=zip archive_path=Divvy.app
+
